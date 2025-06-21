@@ -1,0 +1,229 @@
+body {
+  background: url('images/adam-neumann-vzEeVwUgTmI-unsplash.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #f1f1f1;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: auto; /* ✅ Allow scrolling */
+  backdrop-filter: blur(1.98px);
+  height: 100%;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+header {
+  text-align: center;
+  padding: 1rem;
+ 
+}
+
+
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 1rem;
+  background: hsl(0, 0%, 7%, 45%);
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: white;
+}
+
+section {
+  padding: 2rem;
+  border-bottom: 1px solid #222;
+  text-align: center;
+}
+
+
+.timeline li {
+  margin: 0.5rem 0;
+  text-align: center;
+  list-style: none; /* removes bullets */
+  padding-left: 0;  /* removes left padding */
+}
+
+.redacted {
+  background: #333;
+  color: #333;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.redacted:hover {
+  color: #ff005a;
+}
+
+
+.character-card {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0.8rem;
+  margin: 1rem 0;
+  border: 1px solid var(--highlight);
+  border-radius: 6px;
+  max-width: 220px;         /* Smaller width */
+  font-size: 0.85rem;       /* Smaller text */
+  box-shadow: 0 0 10px var(--highlight);
+  transition: transform 0.3s;
+}
+
+.character-card:hover {
+  transform: scale(1.03);
+}
+
+.character-card img {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--highlight);
+  box-shadow: 0 0 6px var(--highlight);
+}
+
+
+.glitch-text {
+  font-size: 2.5rem;
+  color:white;
+}
+.redacted {
+  background: hsl(0, 0%, 20%, 100%);
+  color: hsl(0, 0%, 20%, 46%);
+  cursor: pointer;
+  transition: color 0.5s ease;
+  display: inline-block;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  user-select: none;
+}
+
+.redacted:hover {
+  color: #000000; /* neon blue reveal */
+  text-shadow: 0 0 8px #000000;
+}
+
+.character-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+#clue-btn {
+  cursor: pointer;
+  background: #333;
+  color: #fffcfc;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  user-select: none;
+  transition: color 0.4s ease;
+}
+
+#clue-btn:hover {
+  color: #ffffff;
+}
+
+#loader-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  color: #00ffcc;
+  z-index: 9999;
+  font-family: 'Courier New', monospace;
+  transition: opacity 0.5s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;   /* ⬅ Push content to top */
+  padding-top: 4rem;
+  text-align: center;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.logo-intro h1 {
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+  text-shadow: 0 0 20px #00ffcc;
+  animation: fadeInOut 2.8s ease forwards;
+  margin: 0;
+}
+
+
+.logo-intro p {
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+  opacity: 0.7;
+  animation: fadeInOut 2.8s ease forwards;
+}
+
+
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: scale(0.95); }
+  20% { opacity: 1; transform: scale(1); }
+  80% { opacity: 1; }
+  100% { opacity: 0; transform: scale(0.98); }
+}
+
+
+
+.clue-item {
+  background: rgba(0,0,0,0.6);
+  border: 1px solid #00ffcc;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s;
+}
+
+.clue-item:hover, .clue-item:focus {
+  background: rgba(0,255,204,0.2);
+  outline: none;
+}
+
+.clue-content {
+  margin-top: 0.5rem;
+  color: #00ffcc;
+}
+
+.hidden {
+  display: none;
+}
+
+.timeline li {
+  margin: 0.5rem 0;
+  text-align: center;
+  list-style: none;
+  padding-left: 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.timeline li:focus, .timeline li:hover {
+  color: #00ffcc;
+  text-shadow: 0 0 6px #00ffcc;
+  outline: none;
+}
+
+
+
+
