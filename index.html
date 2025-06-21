@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeonWorks Lab – The Leon Archives</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+  <div id="loader-screen">
+  <pre id="terminal-welcome"></pre>
+  </div>
+
+  <div id="entry-screen">
+  <h2>Welcome, Agent</h2>
+  <button id="enter-btn">Launch Terminal</button>
+</div>
+
+</head>
+
+<body>
+
+  <audio id="startup-sound" src="sounds/startup.mp3" preload="auto"></audio>
+
+
+  <header>
+    <h1 class="glitch-text">NEONWORKS LAB ARCHIVES</h1>
+    <p class="sub">TOP SECRET FBI FILE #NWL001</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#briefing">Briefing</a></li>
+      <li><a href="#characters">Characters</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+      <li><a href="#clues">Clue Archive</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="briefing">
+    <h2>Mission Briefing</h2>
+    <p>Agent Leon is under threat. Clones are active. Trust no one.</p>
+  </section>
+
+  <section id="characters">
+    <h2>Character Profiles</h2>
+    <div class="character-grid">
+      <div class="character-card">
+        <img src="images/leon.jpg" alt="Leon">
+        <h3>Leon</h3>
+        <p>FBI Agent. On the run. Trying to stop the clone uprising.</p>
+      </div>
+
+      <div class="character-card">
+        <img src="images/image (1).jpg" alt="Clone 1">
+        <h3>Kane</h3>
+        <p>Silent. Lethal. Operates at night. Master of infiltration.</p>
+      </div>
+
+      <div class="character-card">
+        <img src="images/image (3).jpg" alt="Leon's Daughter">
+        <h3>Sylvia</h3>
+        <p>Leon’s daughter. Kidnapped by the Syndicate. Believed to hold key intel.</p>
+      </div>
+
+      <div class="character-card">
+        <img src="images/handler.jpg" alt="The Handler">
+        <h3>Chris</h3>
+        <p>Leon's only trusted.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="timeline">
+  <h2>Story Timeline</h2>
+  <ul class="timeline">
+    <li tabindex="0" data-details="Clone technology stolen by a rogue faction in 2019.">2019: Clone technology stolen.</li>
+    <li tabindex="0" data-details="Initial covert experiments with cloning.">2018: Secret cloning experiments started.</li>
+    <li tabindex="0" data-details="First clone spotted in Los Angeles under mysterious circumstances.">2024: First clone spotted in LA.</li>
+    <li tabindex="0" data-details="Leon’s daughter kidnapped, triggering a manhunt.">2025: Daughter kidnapped. Leon goes rogue.</li>
+    <li tabindex="0" data-details="Clone uprising attempts escalate, causing chaos.">2026: Clone uprising intensifies.</li>
+  </ul>
+  <p id="timeline-details" style="margin-top:1rem; font-weight:600; color:#00ffcc; min-height:3em;"></p>
+</section>
+
+
+  <section id="clues">
+  <h2>Clue Archive</h2>
+  <div class="clue-list">
+    <div class="clue-item" tabindex="0">
+      <p class="clue-title">Clue #1: Syndicate Plans</p>
+      <p class="clue-content hidden">The Syndicate is mobilizing in New York by Q3 2025.</p>
+    </div>
+    <div class="clue-item" tabindex="0">
+      <p class="clue-title">Clue #2: Missing Agent</p>
+      <p class="clue-content hidden">Agent Kane disappeared in 2024 under suspicious circumstances.</p>
+    </div>
+    <div class="clue-item" tabindex="0">
+      <p class="clue-title">Clue #3: Weapon Cache</p>
+      <p class="clue-content hidden">Large cache found in an abandoned warehouse near LA.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <section id="contact">
+    <h2>Contact NeonWorks Lab</h2>
+    <p>Email: ops@neonworkslab.com</p>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
